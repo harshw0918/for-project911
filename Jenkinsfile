@@ -4,6 +4,8 @@ pipeline {
 stages {
     stage ('project 1 stage') {
     steps {
+        sh "rm -rf *"
+        sh "touch file1234"
         echo 'hello stage 1'
     }
         
